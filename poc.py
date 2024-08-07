@@ -59,7 +59,7 @@ public class Exploit {
 
     try:
         p.write_text(program)
-        subprocess.run([os.path.join(CUR_FOLDER, "jdk1.8.0_202/bin/javac"), str(p)])
+        subprocess.run([os.path.join(CUR_FOLDER, "jdk1.8.0_20/bin/javac"), str(p)])
     except OSError as e:
         print(Fore.RED + f'[-] Something went wrong {e}')
         raise e
